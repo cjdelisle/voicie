@@ -56,14 +56,14 @@ const bot = (name, config) => {
     };
     
     
-    const file = Fs.createWriteStream('./chans' + name + '.ndjson', { flags: 'a' });
+    const file = Fs.createWriteStream('./chans-' + name + '.ndjson', { flags: 'a' });
     const writeOp = (type, chan) => {
         file.write(JSON.stringify({ date: +new Date(), type: type, chan: chan }) + '\n');
     };
     
     readChans((chans) => {
         let ircClient = new Irc.Client(config.ircServerHost, config.ircNick, {
-            debug: true,
+            debug: false,
             channels: chans,
             floodProtection: true,
             floodProtectionDelay: 2000,
