@@ -1,0 +1,19 @@
+{
+  "name": "voicebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.77.0",
+    "jshint": "^2.9.6"
+  },
+  "scripts": {
+    "lint": "jshint --config .jshintrc --exclude-path .jshintignore .",
+    "flow": "./node_modules/.bin/flow"
+  }
+}

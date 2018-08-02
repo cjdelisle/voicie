@@ -1,0 +1,4 @@
+*.ndjson
+node_modules
+config.js
+.vscode
