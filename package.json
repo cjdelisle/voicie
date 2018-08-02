@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "jshint --config .jshintrc --exclude-path .jshintignore .",
+    "flow": "./node_modules/.bin/flow"
   },
   "author": "",
   "license": "ISC",
@@ -12,8 +13,8 @@
     "flow-bin": "^0.77.0",
     "jshint": "^2.9.6"
   },
-  "scripts": {
-    "lint": "jshint --config .jshintrc --exclude-path .jshintignore .",
-    "flow": "./node_modules/.bin/flow"
+  "dependencies": {
+    "bintrees": "^1.0.2",
+    "irc": "^0.5.2"
   }
 }
